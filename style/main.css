@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 /* Restante do seu CSS */
 
 :root {
@@ -7,11 +8,13 @@
   --color-secondary: #000;
   --font-primary: "Roboto Condensed", sans-serif;
   --font-secondary: "Poppins", sans-serif;
+  --font-tertiary: "DM Sans", sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -40,7 +43,11 @@ body {
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.5) !important;
   z-index: 999;
+
+  font-family: var(--font-secondary);
 }
+
+
 
 .sticky {
   position: fixed;
@@ -81,3 +88,63 @@ body {
   display: flex;
   max-width: 420px !important;
 }
+
+#contact {
+  padding: 8rem 0;
+}
+
+.title {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 2.8rem;
+  margin-bottom: 7rem;
+}
+
+#contact h3 {
+  font-size: 2rem;
+}
+
+#contact p {
+  font-size: 2rem;
+}
+
+.btn-contact {
+  font-family: var(--font-secondary);
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: var(--color-primary);
+  width: 45%;
+  padding: 1rem 1.5rem;
+  
+}
+
+.bg-figure {
+  position: relative;
+}
+
+.bg-figure::before {
+  position: absolute;
+  content: "";
+  background: url('/img/Rectangle\ 53.png') no-repeat;
+  background-size: contain;
+  width: 200%;
+  height: 200%;
+  top: -52%;
+  left: -12%;
+  z-index: -1;
+}
+
+
+/* geral */
+.title-h3 {
+  font-family: var(--font-tertiary);
+  font-weight: bold;
+
+}
+
+.text-p {
+  font-family: var(--font-primary);
+  font-weight: normal;
+}
+
