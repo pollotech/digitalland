@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+/* Restante do seu CSS */
+
+:root {
+  --color-primary: #e22123;
+  --color-secondary: #000;
+  --font-primary: "Roboto Condensed", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+.header {
+    background-color: var(--color-primary);
+    font-family: var(--font-secondary);
+}
+
+#home {
+    background-image: url(/img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#about {
+  min-height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  z-index: 999;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.card{
+    position: relative;
+    border-radius: 0;
+    border: none;   
+    width: 400px !important;
+}
+
+.card::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #e22123;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-right: 50px solid white; /* Ajuste a largura da "ponta cortada" conforme necessário */
+    border-bottom: 50px solid transparent; /* Ajuste a altura da "ponta cortada" conforme necessário */
+}
+
+#services{
+    background-color: #F5F5F5;
+}
+
+.project{
+  display: flex;
+  max-width: 420px !important;
+}
