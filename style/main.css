@@ -89,37 +89,11 @@ body {
   max-width: 420px !important;
 }
 
+
+/* contact e comments*/
+
 #contact {
   padding: 8rem 0;
-}
-
-.title {
-  font-family: var(--font-secondary);
-  font-weight: 600;
-  font-size: 2.8rem;
-  margin-bottom: 7rem;
-  position: relative;
-}
-
-.title::before {
-  position: absolute;
-  content: "";
-  background-color: var(--color-primary);
-  width: 20%;
-  height: 8px;
-  border-radius: 20px;
-  top: 120%;
-  left: 0;
-}
-
-.title::after {
-  position: absolute;
-  content: "";
-  background-color: #fff;
-  width: 3.5%;
-  height: 8px;
-  top: 120%;
-  left: 3.5%;
 }
 
 #contact h3 {
@@ -157,7 +131,91 @@ body {
   z-index: -1;
 }
 
+/* comments */
+
+.container-comments {
+  min-height: 800px;
+}
+
+.card-comment {
+  padding: 1.5rem 2rem;
+  min-height: 360px;
+  min-width: 360px;
+}
+
+.card-comment-primary {
+  min-height: 480px !important;
+}
+
+.img-perfil-comment {
+  width: 70px;
+  height: 70px;
+
+  border: 1px solid white;
+  border-radius: 50%;
+
+}
+
+.bg-comments-secondary {
+  background-color: var(--color-secondary);
+}
+
+
+.bg-comments-primary {
+  background-color: var(--color-primary);
+}
+
+.name-comment {
+  font-size: 1.5rem;
+}
+
+.location-comment {
+  font-size: 1rem;
+}
+
+.text-comment {
+  font-size: 1rem;
+  font-weight: lighter !important;
+  text-transform: uppercase;
+}
+
+
+
 /* geral */
+.text-red {
+  color: var(--color-primary);
+}
+
+.title {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  margin-bottom: 7rem;
+  position: relative;
+}
+
+.title::before {
+  position: absolute;
+  content: "";
+  background-color: var(--color-primary);
+  width: 20%;
+  height: 8px;
+  border-radius: 20px;
+  top: 120%;
+  left: 0;
+}
+
+.title::after {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  width: 3.5%;
+  height: 8px;
+  top: 120%;
+  left: 3.5%;
+}
+
 .title-h3 {
   font-family: var(--font-tertiary) !important;
   font-weight: bold !important;
