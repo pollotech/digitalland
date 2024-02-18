@@ -203,6 +203,7 @@ body {
   max-height: 600px;
   min-width: 200px;
   min-height: 200px;
+  height: 750px;
   position: relative;
 }
 
@@ -247,84 +248,81 @@ body {
   font-size: 2.8rem;
   text-transform: uppercase;
   margin-bottom: 7rem;
+}
+
+.border-title {
   position: relative;
 }
 
-.title::before {
+.border-title-2 {
+  position: relative;
+}
+
+.border-title::before {
   position: absolute;
   content: "";
   background-color: var(--color-primary);
   width: 20%;
   height: 8px;
   border-radius: 20px;
-  top: 120%;
-  left: 0;
 }
 
-.title::after {
+.border-title::after {
   position: absolute;
   content: "";
   background-color: #fff;
   width: 3.5%;
   height: 8px;
+}
+
+.border-title-1::before {
+  top: 120%;
+  left: 0;
+}
+
+.border-title-1::after {
   top: 120%;
   left: 3.5%;
 }
 
-.title-2 {
-  font-family: var(--font-secondary);
-  font-weight: 600;
-  font-size: 2.8rem;
-  text-transform: uppercase;
-  margin-bottom: 7rem;
-  position: relative;
-}
 
-.title-2::before {
-  position: absolute;
-  content: "";
-  background-color: var(--color-primary);
-  width: 20%;
-  height: 8px;
-  border-radius: 20px;
+.border-title-2::before {
   top: 120%;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.title-2::after {
-  position: absolute;
-  content: "";
-  background-color: #fff;
-  width: 3.5%;
-  height: 8px;
+.border-title-2::after {
   top: 120%;
   left: 44%;
 }
 
-
-
-.title-h3 {
-  font-family: var(--font-tertiary) !important;
-  font-weight: bold !important;
-
+.border-location {
+  position: relative;
 }
 
-.text-p {
-  font-family: var(--font-primary);
-  font-weight: normal;
-}
-
-.font-secondary {
-  font-family: var(--font-secondary);
-}
-
-.btn-slide {
+.border-location::before {
+  position: absolute;
+  content: "";
   background-color: var(--color-primary);
-  width: 55px;
-  height: 28px;
-
+  width: 70%;
+  height: 8px;
+  border-radius: 20px;
+  top: 70%;
+  left: 0%;
 }
+
+.border-location::after {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  width: 12%;
+  height: 8px;
+  top: 70%;
+  left: 17%;
+}
+
+
 
 .btn-slide-active {
   background-color: #000;
