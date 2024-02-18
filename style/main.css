@@ -322,7 +322,27 @@ body {
   left: 17%;
 }
 
+.title-h3 {
+  font-family: var(--font-tertiary) !important;
+  font-weight: bold !important;
 
+}
+
+.text-p {
+  font-family: var(--font-primary);
+  font-weight: normal;
+}
+
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+
+.btn-slide {
+  background-color: var(--color-primary);
+  width: 55px;
+  height: 28px;
+
+}
 
 .btn-slide-active {
   background-color: #000;
