@@ -133,14 +133,20 @@ body {
 
 /* comments */
 
+#comments {
+  margin-bottom: 12rem;
+}
+
 .container-comments {
-  min-height: 800px;
+  min-height: 600px;
+  margin-bottom: 6rem;
 }
 
 .card-comment {
   padding: 1.5rem 2rem;
   min-height: 360px;
   min-width: 360px;
+  box-shadow: 0px 6px 8px 0px #00000062;
 }
 
 .card-comment-primary {
@@ -180,6 +186,55 @@ body {
 }
 
 
+/* testimony */
+
+#testimony {
+  margin-bottom: 12rem;
+}
+
+#testimony h2 {
+  font-size: 4rem;
+}
+
+.video {
+  background-color: #000;
+  border-right: 12px solid var(--color-primary);
+  max-width: 600px;
+  max-height: 600px;
+  min-width: 200px;
+  min-height: 200px;
+  position: relative;
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* location */
+
+#location {
+  background-color: #E31329;
+}
+
+.content-location {
+  padding: 5rem 0;
+}
+
+.title-location {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+}
+
+.text-location {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.mapa-google iframe {
+  width: 100%;
+  height: 100%;
+}
 
 /* geral */
 .text-red {
@@ -216,6 +271,39 @@ body {
   left: 3.5%;
 }
 
+.title-2 {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  margin-bottom: 7rem;
+  position: relative;
+}
+
+.title-2::before {
+  position: absolute;
+  content: "";
+  background-color: var(--color-primary);
+  width: 20%;
+  height: 8px;
+  border-radius: 20px;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title-2::after {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  width: 3.5%;
+  height: 8px;
+  top: 120%;
+  left: 44%;
+}
+
+
+
 .title-h3 {
   font-family: var(--font-tertiary) !important;
   font-weight: bold !important;
@@ -225,5 +313,26 @@ body {
 .text-p {
   font-family: var(--font-primary);
   font-weight: normal;
+}
+
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+
+.btn-slide {
+  background-color: var(--color-primary);
+  width: 55px;
+  height: 28px;
+
+}
+
+.btn-slide-active {
+  background-color: #000;
+  align-self: start;
+  box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.30);
+}
+
+.bg-red {
+  background-color: var(--color-primary);
 }
 
