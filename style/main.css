@@ -25,6 +25,19 @@ body {
   font-family: var(--font-primary);
 }
 
+h2{
+  font-size: 42px !important;
+}
+
+.title-h1{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.title-h1 span{
+  color: var(--color-primary);
+}
+
 .header {
     background-color: var(--color-primary);
     font-family: var(--font-secondary);
@@ -43,7 +56,9 @@ body {
 }
 
 .navbar {
-  position: fixed;
+  position: sticky;
+  top: 0;
+
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.5) !important;
   z-index: 999;
@@ -51,7 +66,14 @@ body {
   font-family: var(--font-secondary);
 }
 
+.hide{
+  display: none;
+}
 
+.btnAtive{
+  background-color: #e22123 !important;
+  border: 2px solid black !important;
+}
 
 .sticky {
   position: fixed;
@@ -370,7 +392,6 @@ footer h3 {
 .title-h3 {
   font-family: var(--font-tertiary) !important;
   font-weight: bold !important;
-
 }
 
 .text-p {
