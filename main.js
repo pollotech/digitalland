@@ -16,3 +16,14 @@ function changeText2() {
   document.getElementById("btn1").classList.remove("btnAtive");
   document.getElementById("btn2").classList.add("btnAtive");
 }
+
+
+
+window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  if (window.pageYOffset > 45) {
+      navbar.classList.add('sticky');
+  } else {
+      navbar.classList.remove('sticky');
+  }
+});
