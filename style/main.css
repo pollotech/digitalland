@@ -60,6 +60,21 @@ h2 {
   min-height: 100vh;
 }
 
+#home h2 {
+  font-family: var(--font-tertiary);
+  font-size: 3.5rem !important;
+  text-shadow: 2px 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+#home p {
+  font-family: var(--font-primary);
+  font-weight: normal;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  text-shadow: 2px 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+
 #about {
   min-height: 100vh;
 }
@@ -377,6 +392,19 @@ footer h3 {
   left: 44%;
 }
 
+.border-title-3::before {
+    width: 10%;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.border-title-3::after {
+  width: 2%;
+  top: 80%;
+  left: 47%;
+}
+
 .border-location {
   position: relative;
 }
@@ -401,6 +429,8 @@ footer h3 {
   top: 70%;
   left: 17%;
 }
+
+
 
 .title-h3 {
   font-family: var(--font-tertiary) !important;
