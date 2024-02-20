@@ -503,3 +503,16 @@ footer h3 {
 .bg-red {
   background-color: var(--color-primary);
 }
+
+
+/* responsivo */
+
+@media (min-width: 576px) {  }
+
+@media (min-width: 768px) {  }
+
+@media (min-width: 992px) {  }
+
+@media (min-width: 1200px) {  }
+
+@media (min-width: 1400px) {  }
