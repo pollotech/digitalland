@@ -160,7 +160,6 @@ h2 {
   width: 45%;
   padding: 1rem 1.5rem;
 }
-<<<<<<< HEAD
 
 .bg-figure {
   position: absolute;
@@ -174,13 +173,6 @@ h2 {
   z-index: -1;
 }
 
-=======
-.btn-contact-nav:hover,
-.btn-contact:hover {
-  background-color: var(--color-secondary);
-  color: white;
-}
->>>>>>> dbef7e55283fe78428161ba30ab711de12cd1c22
 
 /* comments */
 
