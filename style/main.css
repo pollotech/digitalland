@@ -145,6 +145,17 @@ h2{
   
 }
 
+.bg-figure {
+  position: absolute;
+  content: "";
+  background: url('/img/Rectangle\ 53.png') no-repeat;
+  background-size: 100% 100%;
+  width: 720px;
+  height: 650px;
+  top: -34%;
+  right: -3%;
+  z-index: -1;
+}
 
 
 /* comments */
