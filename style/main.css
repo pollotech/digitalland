@@ -526,12 +526,6 @@ footer::after {
 
 /* teste na seção location*/
 
-.container-fluid {
-  margin: 0;
-  padding: 0;
-}
-
-
 
 
 /* responsivo */
@@ -647,6 +641,7 @@ cards de comentarios*/
 @media (min-width: 576px) { 
 
   /* geral */
+  
 
   .title-section {
     font-size: 1.45rem;
@@ -1016,10 +1011,12 @@ cards de comentarios*/
 
   /* geral */
 
+
   .container {
     max-width: 720px;
     /* redundancia necessaria para seção location*/
     margin: auto;
+    padding: auto;
   }
 
   .title-section {
