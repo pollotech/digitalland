@@ -517,7 +517,7 @@ footer::after {
 
 
 .img-segments {
-  background: url('/img/segmentos2.png') no-repeat;
+  background: url('/img/segmentos-1.png') no-repeat;
   background-size: contain;
   width:  250px;
   height: 250px;
@@ -532,6 +532,12 @@ footer::after {
 }
 
 
+.img-segments {
+  background: url('/img/segmentos-1.png') no-repeat;
+  background-size: contain;
+  width:  250px;
+  height: 270px;
+}
 
 
 /* responsivo */
@@ -541,7 +547,15 @@ cards de comentarios*/
 @media (min-width: 280px) {  }
 
 
-@media (min-width: 481px) { 
+@media (min-width: 481px) {
+  
+  
+  .img-segments {
+    background: url('/img/segmentos-1.png') no-repeat;
+    background-size: contain;
+    width:  300px;
+    height: 320px;
+  }
 
   /* navbar */
 
@@ -857,13 +871,6 @@ cards de comentarios*/
     margin-bottom: 4rem;
   }
 
-  .img-segments {
-    background: url('/img/segmentos2.png') no-repeat;
-    background-size: contain;
-    width: 400px;
-    height: 400px;
-  }
-
   /* services */
 
   #services {
@@ -1014,6 +1021,14 @@ cards de comentarios*/
 }
 
 @media (min-width: 768px) { 
+
+  .img-segments {
+    background: url('/img/segmentos-1.png') no-repeat;
+    background-size: contain;
+    width:  400px;
+    height: 300px;
+  }
+
 
   /* geral */
 
@@ -1328,6 +1343,14 @@ cards de comentarios*/
 }
 
 @media (min-width: 1200px) { 
+
+  .img-segments {
+    background: url('/img/segmentos-1.png') no-repeat;
+    background-size: contain;
+    width:  600px;
+    height: 500px;
+  }
+
 
   .container {
     max-width: 1140px;
