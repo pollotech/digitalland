@@ -477,7 +477,7 @@ footer p, footer a {
 footer::before {
   position: absolute;
   content: "";
-  background: url("/img/footerRectanglemobile.png") no-repeat;
+  background: url("./img/footerRectanglemobile.png") no-repeat;
   background-size: cover;
   width: 210px;
   height: 170px;
@@ -488,7 +488,7 @@ footer::before {
 footer::after {
   position: absolute;
   content: "";
-  background: url("/img/footerEllipsemobile.png") no-repeat;
+  background: url("./img/footerEllipsemobile.png") no-repeat;
   background-size: cover;
   width: 120px;
   height: 140px;
@@ -498,12 +498,12 @@ footer::after {
 }
 
 #instragram {
-  background: url('/img/instagram\ \(2\).png') no-repeat;
+  background: url('./img/instagram\ \(2\).png') no-repeat;
   background-size: cover;
 }
 
 #WhatsApp {
-  background: url('/img/whatsapp\ \(2\).png') no-repeat;
+  background: url('./img/whatsapp\ \(2\).png') no-repeat;
   background-size: cover;
 }
 
@@ -517,7 +517,7 @@ footer::after {
 
 
 .img-segments {
-  background: url('/img/segmentos-1.png') no-repeat;
+  background: url('./img/segmentos-1.png') no-repeat;
   background-size: contain;
   width:  250px;
   height: 250px;
@@ -551,8 +551,6 @@ cards de comentarios*/
   
   
   .img-segments {
-    background: url('/img/segmentos-1.png') no-repeat;
-    background-size: contain;
     width:  420px;
     height: 440px;
   }
@@ -790,7 +788,7 @@ cards de comentarios*/
   /* home */
 
   #home {
-    background: url('/img/background.png') no-repeat;
+    background: url('./img/background.png') no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 500px;
@@ -888,7 +886,7 @@ cards de comentarios*/
   }
 
   .img-service {
-    background: url('/img/image2.png') no-repeat;
+    background: url('./img/image2.png') no-repeat;
     background-size: cover;
     background-position: center;
     height: auto;
@@ -926,7 +924,7 @@ cards de comentarios*/
   .bg-figure::before {
     position: absolute;
     content: "";
-    background: url('/img/Rectangle\ 53.png') no-repeat;
+    background: url('./img/Rectangle\ 53.png') no-repeat;
     background-size: 100% 100%;
     width: 120%;
     height: 100%;
@@ -1023,7 +1021,7 @@ cards de comentarios*/
 @media (min-width: 768px) { 
 
   .img-segments {
-    background: url('/img/segmentos-1.png') no-repeat;
+    background: url('./img/segmentos-1.png') no-repeat;
     background-size: contain;
     width:  600px;
     height: 620px;
@@ -1345,7 +1343,7 @@ cards de comentarios*/
 @media (min-width: 1200px) { 
 
   .img-segments {
-    background: url('/img/segmentos-1.png') no-repeat;
+    background: url('./img/segmentos-1.png') no-repeat;
     background-size: contain;
     width:  600px;
     height: 500px;
