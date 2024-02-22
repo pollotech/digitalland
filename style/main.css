@@ -533,7 +533,7 @@ footer::after {
 
 
 .img-segments {
-  background: url('/img/segmentos-1.png') no-repeat;
+  background: url('./img/segmentos-1.png') no-repeat;
   background-size: contain;
   width:  280px;
   height: 300px;
