@@ -526,6 +526,12 @@ footer::after {
 
 /* teste na seção location*/
 
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+
 
 
 /* responsivo */
@@ -1016,7 +1022,6 @@ cards de comentarios*/
     max-width: 720px;
     /* redundancia necessaria para seção location*/
     margin: auto;
-    padding: auto;
   }
 
   .title-section {
