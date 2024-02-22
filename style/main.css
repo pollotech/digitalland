@@ -535,8 +535,8 @@ footer::after {
 .img-segments {
   background: url('/img/segmentos-1.png') no-repeat;
   background-size: contain;
-  width:  250px;
-  height: 270px;
+  width:  280px;
+  height: 300px;
 }
 
 
@@ -553,8 +553,8 @@ cards de comentarios*/
   .img-segments {
     background: url('/img/segmentos-1.png') no-repeat;
     background-size: contain;
-    width:  300px;
-    height: 320px;
+    width:  420px;
+    height: 440px;
   }
 
   /* navbar */
@@ -1025,8 +1025,8 @@ cards de comentarios*/
   .img-segments {
     background: url('/img/segmentos-1.png') no-repeat;
     background-size: contain;
-    width:  400px;
-    height: 300px;
+    width:  600px;
+    height: 620px;
   }
 
 
