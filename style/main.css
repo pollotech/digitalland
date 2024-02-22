@@ -74,7 +74,16 @@ body {
   font-family: var(--font-secondary);
 }
 
+.header a {
+  color: white;
+}
+
+
 /* navbar */
+
+.open {
+  display: block !important;
+} 
 
 .nav-desktop {
   display: none;
@@ -84,6 +93,23 @@ body {
   padding: 2rem 2rem;
   margin-bottom: 4rem;
 }
+
+.navbar-mobile {
+  display: none;
+  padding-top: 2rem;
+}
+
+.navbar-mobile .nav-item {
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.navbar-mobile .nav-link {
+  text-align: center;
+  color: var(--color-primary) !important;
+}
+
 
 .img-logo {
   width: 50px;
@@ -513,18 +539,7 @@ footer::after {
   height: 8px;
 }
 
-/* testes */
-
-
-.img-segments {
-  background: url('../img/segmentos-1.png') no-repeat;
-  background-size: contain;
-  width:  250px;
-  height: 250px;
-}
-
-
-/* teste na seção location*/
+/* teste */
 
 .container-fluid {
   margin: 0;
@@ -658,6 +673,26 @@ cards de comentarios*/
 
 @media (min-width: 576px) { 
 
+  /* js*/
+
+  .open {
+    display: block !important;
+    background-color: white;
+  }
+
+  .open .nav-link {
+    color: #000 !important;
+  }
+
+  .nav2 {
+    background-color: white !important;
+  }
+
+  .nav2 .text-logo span:first-child {
+    color: #000 !important;
+  }
+
+
   /* geral */
   
 
@@ -752,6 +787,12 @@ cards de comentarios*/
     z-index: 1;
   }
 
+  .nav-desktop .nav-item {
+    margin-bottom: 10px;
+  }
+
+  /* js ---------------- */
+
   .sticky {
     position: fixed;
     background-color: #fff !important;
@@ -760,6 +801,8 @@ cards de comentarios*/
   .sticky .nav-link, .sticky .text-logo span:first-child {
     color: #000 !important;
   }
+
+  /* ---------------------- */
 
   .text-logo {
     font-weight: normal;
@@ -1590,6 +1633,11 @@ cards de comentarios*/
 
   #location p {
     font-size: 1.8rem;
+  }
+
+  .icon-redes-sociais {
+    width: 22px;
+    height: 22px;
   }
 
 
