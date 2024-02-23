@@ -1,7 +1,0 @@
-{
-  "name": "digital-page",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "custom"
-}

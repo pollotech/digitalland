@@ -7,6 +7,8 @@
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+
     <link rel="stylesheet" href="./style/main.css" />
     <title>Digital Sistema</title>
   </head>
@@ -21,6 +23,11 @@
           73890000
         </p>
         <div class="d-flex gap-3 justify-content-center">
+          <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+          </a>
           <a href="">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
               <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
@@ -54,11 +61,7 @@
           <div class="d-lg-flex justify-content-lg-between">
             <div class="d-flex justify-content-between align-items-center">
               <a class="d-flex align-items-center gap-2" href="">
-                <img class="img-logo" src="./img/logo.png" alt="logo da digital sistema">
-                <div class="d-flex flex-column text-logo">
-                  <span class="text-white">Digital</span>
-                  <span class="text-cor-1">Sistema</span>
-                </div>
+                <img class="img-logo" src="./img/logo2.png" alt="logo da digital sistema">
               </a>
               <button id="btn-menu-tablet" class="icon-menu btn"
               type="button">
@@ -93,11 +96,7 @@
     <nav class="nav-mobile">
       <div class=" d-flex align-items-center justify-content-between">
         <a class="d-flex align-items-center gap-2" href="">
-          <img class="img-logo" src="./img/logo.png" alt="logo da digital sistema">
-          <div class="d-flex flex-column text-logo">
-            <span class="text-black">Digital</span>
-            <span class="text-cor-1">Sistema</span>
-          </div>
+          <img class="img-logo" src="./img/logo2.png" alt="logo da digital sistema">
         </a>
         <button id="btn-menu-mobile" class="icon-menu btn">
           <img class="img-fluid" src="./img/menu-de-tres-linhas 1.png" alt="menu">
@@ -182,7 +181,7 @@
             <div class="card-about row align-items-center justify-content-between">
               <div class="col-2 col-sm-12 d-sm-flex justify-content-center">
                 <div class="icon-card">
-                  <img class="img-fluid" src="./img/card-notas.png" alt="">
+                  <img class="img-fluid" src="./img/card-nfe.png" alt="">
                 </div>
               </div>
               <h3 class="col-3 col-sm-12 text-sm-center title-card">Notas Fiscais</h3>
@@ -216,39 +215,34 @@
             <img class="img-service-mobile" src="./img/image2.png" alt="">
           </div>
 
-          <div class="service row flex-xl-row-reverse">
+          <div id="servico1" class="service row flex-xl-row-reverse">
             <div class="d-none d-sm-block col-sm-7 img-service">
             </div>
             <div class="col -12 col-sm-5 ps-sm-3 ps-xl-0 pe-xl-3">
               <h3 class="title-service">Gestão de estoque como você nunca viu.</h3>
-              <p class="text-service">A Digital Sistemas simplifica: cadastro de fornecedores, relatórios de estoque,controle de compras, gestão de depósitos e mais! Otimize seu negócio conosco. Estamosaqui para tornar a gestão do seu negócio mais eficiente e descomplicada.</p>
-
-              <div class="mt-5 d-none d-xl-flex  justify-content-center">
-                <div class="grupo-btn-service d-flex gap-3">
-                  <span onclick="service()" class="d-inline-block btn-slide x2"></span>
-                  <span onclick="service()" class="d-inline-block btn-slide btn-slide-active"></span>
-                </div>
-              </div>
+              <p class="text-service">A Digital Sistemas simplifica: cadastro de fornecedores, relatórios de estoque, controle de compras, gestão de depósitos e mais! Otimize seu negócio conosco. Estamos aqui para tornar a gestão do seu negócio mais eficiente e descomplicada.</p>
             </div>
           </div>
 
-          <div class="service row flex-row-reverse d-xl-none flex-xl-row-reverse">
+          <div id="servico2" class="service row flex-row-reverse d-xl-none flex-xl-row-reverse">
             <div class="col-12 col-sm-7 d-none d-sm-block img-service">
             </div>
             <div class="col-12 col-sm-5 pe-sm-3 ps-xl-0 pe-xl-3">
               <h3 class="title-service">Emissão de nota fiscal pode ser simples.</h3>
-              <p class="text-service">Com a Digital Sistema, sua agilidade para emitir os três principais tipos de notasfiscais (NFe, NFSe e NFCe) é incomparável. Elimine a necessidade de inserir dadosrepetidamente, deixe que os impostos sejam calculados automaticamente e desfrute demuito mais praticidade! Descubra como podemos otimizar o seu processo. Clique agorano botão abaixo para saber mais.</p>
-
-              <div class="mt-5 d-none d-xl-flex justify-content-center">
-                <div class="d-flex gap-3">
-                  <span class="d-inline-block btn-slide x2"></span>
-                  <span class="d-inline-block btn-slide btn-slide-active"></span>
-                </div>
-              </div>
-              
+              <p class="text-service">Com a Digital Sistema, sua agilidade para emitir os três principais tipos de notasfiscais (NFe, NFSe e NFCe) é incomparável. Elimine a necessidade de inserir dados repetidamente, deixe que os impostos sejam calculados automaticamente e desfrute demuito mais praticidade! Descubra como podemos otimizar o seu processo. Clique agora no botão abaixo para saber mais.</p>
             </div>
           </div>
 
+          <div class="mt-3 d-none d-xl-flex  justify-content-start row">
+            <div class="col-xl-5 grupo-btn-service d-flex gap-3 justify-content-center">
+
+              <span id="botaoServico1" onclick="mostrarServico(1)" class="d-inline-block btn-slide-service x2"></span>
+
+              <span id="botaoServico2" onclick="mostrarServico(2)" class="d-inline-block btn-slide-service"></span>
+
+            </div>
+            <div class="col-xl-7"></div>
+          </div>
 
         </div>
 
@@ -294,32 +288,33 @@
 
           <div class="comments-carousel">
 
-            <div class="card-comment card-comment-box-shadow">
-              <div class="d-flex align-items-center mb-4">
-                <div class="img-perfil-comment">
-                  <img class="img-fluid" src="./img/perfil-comentario.jpeg" alt="">
-                </div>
-                <div class="d-flex flex-column ms-3">
-                  <span class="name-comment">Grupo líder</span>
-                  <span class="location-comment text-black">São Felix do Coribe - BA</span>
-                </div>
-              </div>
-              <div>
-                <p class="text-comment">Após várias frustrações , testando diversos sistemas, finalmente cheguei ,em um que fosse realmente pratico e muito eficiente, o Digital sistema me trouxe muita praticidade e economia de tempo, além da assistência que é de ótima qualidade!</p>
-              </div>
-            </div>
-            <div class="card-comment-emphasis card-comment-box-shadow">
+            <div class="card-comment-emphasis card-comment-box-shadow comment">
               <div class="d-flex align-items-center mb-4">
                 <div class="img-perfil-comment">
                   <img class="img-fluid" src="./img/FAZENDA-PARAGUAY.jpg" alt="">
                 </div>
                 <div class="d-flex flex-column ms-3">
                   <span class="name-comment">Fazenda paraguay Brasil</span>
-                  <span class="location-comment text-cor-1">São Felix do Coribe - BA</span>
+                  <span class="location-comment">São Felix do Coribe - BA</span>
                 </div>
               </div>
               <div>
                 <p class="text-comment">Nossa empresa é pequena, familiar e do Agro. Diante de tantas dificuldades de mão de obra para imput de lançamentos e emissão de notas fiscais digitais, necessitávamos de uma plataforma, simples, prática, sustentável e eficiente! Diante desse cenário, tentamos várias outras mais sem sucesso! Daí foi quando foi nos apresentado a Digital Sistema. Além da facilidade, outro ponto fundamental foi o suporte que é primorial! Parabéns a todo time da digital. Sucesso sempre, e nosso muito obrigado</p>
+              </div>
+            </div>
+
+            <div class="card-comment card-comment-box-shadow comment">
+              <div class="d-flex align-items-center mb-4">
+                <div class="img-perfil-comment">
+                  <img class="img-fluid" src="./img/perfil-comentario.jpeg" alt="">
+                </div>
+                <div class="d-flex flex-column ms-3">
+                  <span class="name-comment">Grupo líder</span>
+                  <span class="location-comment">São Felix do Coribe - BA</span>
+                </div>
+              </div>
+              <div>
+                <p class="text-comment">Após várias frustrações , testando diversos sistemas, finalmente cheguei ,em um que fosse realmente pratico e muito eficiente, o Digital sistema me trouxe muita praticidade e economia de tempo, além da assistência que é de ótima qualidade!</p>
               </div>
             </div>
           
@@ -327,13 +322,7 @@
           </div>
 
         </div>
-
-        <div
-        class="d-flex justify-content-center d-none d-sm-flex align-items-end gap-3"
-        style="height: 40px">
-          <span class="d-inline-block btn-slide"></span>
-          <span class="d-inline-block btn-slide btn-slide-active"></span>
-        </div>
+       
       </section>
 
       <section id="testimony">

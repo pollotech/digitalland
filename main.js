@@ -1,5 +1,42 @@
 
+function showSlide(slideId, index){
 
+  var btnSlides = document.querySelectorAll('.btn-slide');
+
+  var carousel = document.querySelector('.comments-carousel');
+
+  var comentarios = document.querySelectorAll('.comment');
+
+  var btnDestaque = document.querySelector('.btn-slide-active')
+  var comentarioDestaque = document.querySelector('.card-comment-emphasis')
+  
+  var idSlideAtivo = comentarioDestaque.id;
+
+  var idSlide = slideId.substring(5,6);
+
+  idSlideAtivo = idSlideAtivo.substring(5,6)
+
+  if(idSlideAtivo != idSlide){
+
+    btnSlides[index-1].classList.add('btn-slide-active')
+    btnDestaque.classList.remove('btn-slide-active')
+
+    comentarios[index-1].classList.remove('card-comment')
+    comentarios[index-1].classList.add('card-comment-emphasis')
+
+    comentarioDestaque.classList.remove('card-comment-emphasis')
+    comentarioDestaque.classList.add('card-comment')
+
+    comentarios[index].computedStyleMap.order = 2;
+
+  }
+
+}
+
+
+
+
+// ativar o menu fixo quando ocorre um evento scroll
 window.addEventListener('scroll', function() {
   var navbar = document.querySelector('.nav-desktop');
   
@@ -10,8 +47,52 @@ window.addEventListener('scroll', function() {
   }
 });
 
+var servicoAtual = 1;
+var intervaloTempo = 20000;
+var intervaloAtivo = false;
+
+function mostrarServico(servico) {
+
+  document.getElementById('servico1').classList.add('d-xl-none')
+  document.getElementById('servico2').classList.add('d-xl-none')
+
+  document.getElementById('botaoServico1').classList.remove('x2');
+  document.getElementById('botaoServico2').classList.remove('x2');
+
+  document.getElementById('servico' + servico).classList.remove('d-xl-none')
+
+  document.getElementById('botaoServico' + servico).classList.add('x2');
+
+  servicoAtual = servico;
+
+ console.log('aqui')
+
+}
+
+function alternarServicos() {
+  if (servicoAtual === 1) {
+    mostrarServico(2);
+  } else {
+    mostrarServico(1);
+  }
+}
+
+var intervalo =  setInterval(alternarServicos, intervaloTempo);
+
+function pararAlternancia() {
+  clearInterval(intervalo);
+  intervaloAtivo = false;
+}
+
+function reiniciarAlternancia() {
+  if (!intervaloAtivo) {
+    intervalo = setInterval(alternarServicos, intervaloTempo);
+    intervaloAtivo = true;
+}
+}
 
 
+// alterar classes de alguns elementos conforme alguma condição
 function adicionarClasse() {
   var meuElemento = document.getElementById("container-location");
   var menu = document.getElementById('menu-tablet');
@@ -30,11 +111,24 @@ function adicionarClasse() {
     navbar.classList.remove('nav2');
   }
 
+  // vai para alternancia para tela menores quer 1200px 
+  if(window.innerWidth < 1200){
+    console.log('parou '+intervalo);
+    pararAlternancia();
+  }else{
+    reiniciarAlternancia();
+    console.log('reiniciou '+intervalo);
+  }
+
+  
+
 }
 
 window.addEventListener("load", adicionarClasse);
 window.addEventListener("resize", adicionarClasse);
 
+
+// menu responsivo 
 document.addEventListener("DOMContentLoaded", function() {
 
   var btnMenuDesktop = document.getElementById('btn-menu-tablet');
@@ -52,7 +146,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   function toggleMenu(btnMenu, menu, navbar){
-    console.log('function 1')
 
     btnMenu.addEventListener('click', function() {
       menu.classList.toggle('open');

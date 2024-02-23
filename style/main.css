@@ -94,6 +94,11 @@ body {
   margin-bottom: 4rem;
 }
 
+.img-logo {
+  width: 170px;
+  height: 77px;
+}
+
 .navbar-mobile {
   display: none;
   padding-top: 2rem;
@@ -108,17 +113,6 @@ body {
 .navbar-mobile .nav-link {
   text-align: center;
   color: var(--color-primary) !important;
-}
-
-
-.img-logo {
-  width: 50px;
-  height: 50px;
-}
-
-.text-logo {
-  font-size: 0.8rem;
-  font-weight: bold;
 }
 
 .icon-menu img {
@@ -253,6 +247,8 @@ body {
 
 .service {
   margin-bottom: 2rem;
+  animation-duration: 1.5s;
+  animation-name: teste;
 }
 
 .title-service {
@@ -268,7 +264,30 @@ body {
   font-size: 0.95rem;
   color: var(--color-secondary);
   line-height: 1.2;
+}
 
+.btn-slide-service {
+  cursor: pointer;
+  background-color: #000;
+  width: 50px;
+  height: 28px;
+  transition: 0.5s all;
+}
+
+@keyframes teste {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.x2 {
+  transform: scale(1.25);
+  background-color: var(--color-primary);
+  border: 1px solid black;
 }
 
 /* contato */
@@ -324,9 +343,6 @@ body {
 }
 
 .container-comments {
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
   position: relative;
 }
 
@@ -359,8 +375,10 @@ body {
 
 .comments-carousel {
   display: flex;
-  transition: transform 0.5s ease;
   align-items: center;
+  padding: 0 2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .card-comment-emphasis {
@@ -400,6 +418,14 @@ body {
   font-size: 0.80rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.card-comment .location-comment {
+  color: #000;
+}
+
+.card-comment-emphasis .location-comment {
+  color: var(--color-primary);
 }
 
 .location-comment {
@@ -539,7 +565,7 @@ footer::after {
   height: 8px;
 }
 
-/* teste */
+/* teste ou em modificação constante */
 
 .container-fluid {
   margin: 0;
@@ -550,9 +576,20 @@ footer::after {
 .img-segments {
   background: url('../img/segmentos-1.png') no-repeat;
   background-size: contain;
-  width:  280px;
-  height: 300px;
+  width:  320px;
+  height: 340px;
+  margin-top: 0.25rem;
 }
+
+/* ckasse não ultilizado*/
+
+
+.text-logo {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* --------- */
 
 
 /* responsivo */
@@ -564,6 +601,7 @@ cards de comentarios*/
 
 @media (min-width: 481px) {
   
+  /* testes ou modificação constante*/
   
   .img-segments {
     width:  420px;
@@ -571,15 +609,6 @@ cards de comentarios*/
   }
 
   /* navbar */
-
-  .img-logo {
-    width: 60px;
-    height: 60px;
-  }
-
-  .text-logo {
-    font-size: 0.95rem;
-  }
 
   .icon-menu img {
     width: 40px;
@@ -669,9 +698,35 @@ cards de comentarios*/
     height: 14px;
   }
 
+  footer::before {
+    width: 320px;
+    height: 240px;
+  }
+
+  footer::after {
+    width: 180px;
+    height: 230px;
+  }
+
+  /* ckasses não ultilizadas */
+
+  .text-logo {
+    font-size: 0.95rem;
+  }
+
+  /* ------------ */
+
 }
 
 @media (min-width: 576px) { 
+
+  /* testes ou modificação constante*/
+
+
+  .img-segments {
+    width:  520px;
+    height: 540px;
+  }
 
   /* js*/
 
@@ -686,10 +741,6 @@ cards de comentarios*/
 
   .nav2 {
     background-color: white !important;
-  }
-
-  .nav2 .text-logo span:first-child {
-    color: #000 !important;
   }
 
 
@@ -803,10 +854,6 @@ cards de comentarios*/
   }
 
   /* ---------------------- */
-
-  .text-logo {
-    font-weight: normal;
-  }
   
   .navbar-nav {
     display: none;
@@ -987,8 +1034,12 @@ cards de comentarios*/
 
   /* comentarios */
 
+  #comments {
+    margin-bottom: 9rem;
+  }
+
   .container-comments {
-    overflow-x: hidden;
+    overflow: hidden;
     margin: 6rem auto;
   }
 
@@ -1057,15 +1108,36 @@ cards de comentarios*/
     height: 400px;
   }
 
+  /* footer */
 
+  
+  footer::after {
+    width: 250px;
+    height: 270px;
+  }
+
+
+  /* ckasses não ultilizadas */
+
+  .nav2 .text-logo span:first-child {
+    color: #000 !important;
+  }
+
+  .text-logo {
+    font-weight: normal;
+  }
+
+  /* --------------- */
 
 }
 
 @media (min-width: 768px) { 
 
+  /* teste ou modificação constante*/
+
   .img-segments {
-    width:  600px;
-    height: 620px;
+    width:  670px;
+    height: 640px;
   }
 
 
@@ -1108,15 +1180,6 @@ cards de comentarios*/
   }
 
   /* navbar */
-
-  .img-logo {
-    width: 80px;
-    height: 80px;
-  }
-
-  .text-logo {
-    font-size: 1.25rem;
-  }
 
   .icon-menu img {
     width: 50px;
@@ -1269,6 +1332,18 @@ cards de comentarios*/
     font-size: 1.20rem;
   }
 
+  footer::after {
+    width: 330px;
+    height: 350px;
+  }
+
+  /* ckasses não ultilizadas */
+
+  .text-logo {
+    font-size: 1.25rem;
+  }
+
+  /* --------------- */
 
 }
 
@@ -1299,7 +1374,9 @@ cards de comentarios*/
     font-weight: 300;
   }
 
-
+  .nav-desktop .nav-item {
+    margin-bottom: 0;
+}
 
   /* home */
 
@@ -1383,11 +1460,14 @@ cards de comentarios*/
 
 @media (min-width: 1200px) { 
 
+  /* teste ou modificação constante*/
+
   .img-segments {
-    width:  600px;
-    height: 500px;
+    width:  850px;
+    height: 800px;
   }
 
+  /* geral */
 
   .container {
     max-width: 1140px;
@@ -1397,6 +1477,41 @@ cards de comentarios*/
     font-size: 2.25rem;
   }
 
+  .border-section::before {
+    width: 125px;
+    height: 6px;
+  }
+
+  .border-section::after {
+    width: 30px;
+    height: 6px;
+  }
+
+  .border-section-center::before, .border-section-center::after {
+    height: 6px;
+  }
+
+  .border-section-center::before {
+    width: 180px;
+  }
+
+  .border-section-center::after {
+    width: 30px;
+    left: 47%;
+  }
+
+  .border-md-section::before {
+    width: 130px;
+  }
+
+  .border-md-section::after {
+    left: 30px;
+    width: 30px;
+  }
+
+  .border-md-section::before, .border-md-section::after {
+    height: 6px;
+  }
 
   /* header */
 
@@ -1419,9 +1534,6 @@ cards de comentarios*/
     font-size: 1.2rem;
   }
 
-  .text-logo {
-    font-size: 1.35rem;
-  }
 
   .btn-contact-nav {
     padding: 0.5rem 1rem;
@@ -1498,10 +1610,6 @@ cards de comentarios*/
     font-size: 1.8rem;
   }
 
-  .x2 {
-    transform: scale(1.3);
-    border: 1px solid black;
-  }
 
   /* contact */
 
@@ -1610,9 +1718,17 @@ cards de comentarios*/
     height: 18px;
   }
 
+  /* ckasses não ultilizadas */
+
+  .text-logo {
+    font-size: 1.35rem;
+  }
+
 }
 
 @media (min-width: 1400px) {  
+
+  /* geral */
 
   .container {
     max-width: 1200px;
@@ -1621,6 +1737,8 @@ cards de comentarios*/
   .title-section {
     font-size: 2.75rem;
   }
+
+  /* location */
 
   .mapa-google, .content-location {
     height: 600px;
@@ -1634,6 +1752,8 @@ cards de comentarios*/
   #location p {
     font-size: 1.8rem;
   }
+
+  /* footer */
 
   .icon-redes-sociais {
     width: 22px;
