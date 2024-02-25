@@ -1470,7 +1470,8 @@ cards de comentarios*/
   /* geral */
 
   .container {
-    max-width: 1140px;
+    max-width: 1180px;
+    width: 90%;
   }
 
   .title-section {
@@ -1702,15 +1703,13 @@ cards de comentarios*/
     font-size: 1.40rem;
   }
 
-  
-
   footer h3 {
     font-size: 2rem;
     margin-bottom: 0.75rem;
   }
 
   footer p, footer a {
-    font-size: 1.45rem;
+    font-size: 1.30rem;
   }
   
   .icon-redes-sociais {
@@ -1721,7 +1720,7 @@ cards de comentarios*/
   /* ckasses não ultilizadas */
 
   .text-logo {
-    font-size: 1.35rem;
+    font-size: 1.30rem;
   }
 
 }
